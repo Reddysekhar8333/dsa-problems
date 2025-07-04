@@ -32,7 +32,7 @@ class Solution:
         backtrack(0)
         return result
 
-if __name__=="__main__":
+if __name__=="__main__": # the execution starts here
     sq=Solution()
     ans=sq.solveNQueens(4)
     print(ans)
