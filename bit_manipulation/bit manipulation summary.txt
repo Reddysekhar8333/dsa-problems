@@ -1,0 +1,17 @@
+bit manipulation:
+-------------------
+1.binary number conversion (1's & 2's complement)
+2.operations( AND,OR,XOR,NOT,SWIFT(left&right) )
+3.swap 2 numbers
+4.check is the ith bit is set or not
+5.extract the ith bit
+6.set the ith bit
+7.clear the ith bit
+8.toggle the ith bit
+9.remove the last set bit(right most)
+10.count the number of set bits
+11.check if the number is a power of 2 or not
+12.minimum bit flips to convert number
+13.power set (print all subsets)
+14.Single Number (1,2,3) problems
+15.divide two numbers without division operators
