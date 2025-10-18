@@ -1,5 +1,5 @@
 # problem : Longest substring without repeating characters.
-
+#           given a string s, find the length of the longest substring without repeating characters. (leetcode 3)
 def longest_unique_substring(s):
     answer = 0
     left = 0
@@ -9,9 +9,8 @@ def longest_unique_substring(s):
             char_set.remove(s[left])
             left += 1
         char_set.add(s[right])
-        temp_ans =(right-left)+1
-        answer = max(answer,temp_ans)
+        answer = max(answer,(right-left)+1)
     return answer
 
-s="abcabcbb"
+s="abcabcbbh"
 print(longest_unique_substring(s))

@@ -1,32 +1,38 @@
 #sum of the digits
-def sum_of_digits(n):
+def sum_of_digits(n): 
     if n==0:
         return 0
     return (n%10)+sum_of_digits(n//10)
 
+
 #product of the digits
-def product_of_digits(n):
+def product_of_digits(n): 
     if n<=9:
         return n
     return (n%10)*product_of_digits(n//10)
 
+
 #print n numbers reversely
-def fun(n):
+def fun(n): 
     if n==0:
         return
     print(n,end=" ")
     fun(n-1)
 
+
 #print n numbers orderly using recursion
-def funr(n):
+def funr(n): 
     if n==0:
         return
     funr(n-1)
     print(n,end=" ")
+    
+
 # reverse a number, ex:1234 ==>4321
 '''there are few ways to solve using recursion'''
+
 def reverse1(n,rev=0):
-    """using integer division & modulus"""
+    "using integer division & modulus"
     if n==0:
         return rev
     return reverse1(n//10, rev*10 + n % 10)
