@@ -36,12 +36,11 @@ def reverse1(n,rev=0):
     if n==0:
         return rev
     return reverse1(n//10, rev*10 + n % 10)
-def reverse2(n):
-    """using string conversion & recursion"""
-    n=str(n)
+def reverse_string(n):
+    """reverse string using recursion"""
     if len(n)==1:
         return n
-    return n[-1]+reverse2(n[:-1])
+    return n[-1]+reverse_string(n[:-1])
 # check if the number is palindrome
 def is_palindrome(n):
     n=str(n)
@@ -80,8 +79,8 @@ if __name__=="__main__":
     print(funr(5))
     print("reverse1:")
     print(reverse1(12345))
-    print("reverse2:")
-    print(reverse2(67890))
+    print("reverse a string:")
+    print(reverse_string("reddy"))
     print("palindrome:")
     print(is_palindrome(12321))
     print("count zeros :")

@@ -12,3 +12,4 @@ arr = [1, 2, 3]
 result = find_all_subarrays(arr)
 print("All subarrays:", result)
 print("Total subarrays:", len(result))
+# Number of Subarrays Formula: n * (n + 1) // 2
